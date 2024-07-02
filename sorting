@@ -1,0 +1,5 @@
+select car from cars order by car
+select car,origin from cas order by origin
+select * from cars order by cylinders
+select * from cars order by car, weight desc
+select * from cars order by 2 desc,3
