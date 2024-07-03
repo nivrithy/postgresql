@@ -1,0 +1,3 @@
+select car,mpg,cylinders,weight from cars where car ilike 'ford%'
+select car from cars where car ilike '%skylark%'
+select car from cars where car ilike '%skylark ___'
