@@ -1,0 +1,4 @@
+select car,mpg,cylinders,weight from cars where mpg=17 or mpg=15
+select car,mpg,cylinders,weight from cars where (mpg=15 or mpg=17) and cylinders=6
+select car,mpg from cars where mpg in (13,14,15)
+select car,mpg from cars where not mpg=15
