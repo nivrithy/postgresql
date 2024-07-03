@@ -1,0 +1,5 @@
+select * from cars
+select car,mpg,cylinders,weight from cars where car='Ford Torino'
+select car,mpg,cylinders,weight from cars where cylinders!=8
+select car,mpg,cylinders,weight from cars where cylinders between 4 and 6
+select car,mpg,cylinders,weight from cars where weight is null
