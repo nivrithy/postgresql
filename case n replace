@@ -1,0 +1,8 @@
+select * from cars
+select origin,
+case
+	when origin = 'US' then 1 
+    when origin = 'Japan' then 2
+    when origin = 'Europe' then 3 
+end as originmap from cars
+select replace ("origin",'US','USA') as origin from cars
