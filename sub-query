@@ -1,0 +1,5 @@
+select * from cars
+select car,cylinders,weight from cars where cylinders in (select distinct(cylinders) from cars where weight < 2000) order by weight desc
+select car,cylinders,weight from cars where cylinders in (select distinct(cylinders) from cars where weight in (select min(weight) from cars where origin='Japan' )) order by weight desc
+with new_cars as (select car,weight,origin from cars where "origin"='Europe' and "cylinders" > 5)
+select * from new_cars
