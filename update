@@ -1,0 +1,5 @@
+select * from my_courses
+update my_courses set duration=90 where course='python for everyone'
+update my_courses set duration=90,fee=15000 where id='001'
+update my_courses set duration='null'
+alter table my_courses alter column duration type text
