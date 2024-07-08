@@ -1,0 +1,11 @@
+create table my_courses ("id" char(3) primary key not null,"course" varchar(100) not null,"fee" integer not null,"duration" integer not null)
+select * from my_courses
+insert into my_courses values('001','python for everyone',5999,40)
+insert into my_courses values('002','python advanced developer',11999,null)
+insert into my_courses("id","course","fee") 
+	values ('003','python for datascience',11999)
+
+--EMPLOYEE TABLE	
+create table employee(eid int,ename varchar(50),age int,dept text,salary numeric(7,2))
+select * from employee
+insert into employee values (101,'nivi',21,'se',45000),(102,'nikhil',21,'programmer',45000),(103,'subiksha',22,'se',50000),(104,'elan',22,'programmer',40000)
