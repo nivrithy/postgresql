@@ -1,0 +1,3 @@
+select * from my_courses
+select course from my_courses
+select fee from my_courses where course='python for everyone'
