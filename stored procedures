@@ -1,0 +1,19 @@
+call insert_courses (202,22,'1 yr course')
+select * from courses where course='1 yr course'
+
+create or replace procedure newcourse
+(
+_id integer,
+_duration integer,
+_course text
+)
+language plpgsql as
+$$
+begin
+    insert into courses ("ID","duration","course")
+    values (_id,_duration,_course);
+end
+$$
+
+call newcourse (203,25,'best course')
+select * from courses
